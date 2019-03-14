@@ -52,7 +52,7 @@ const client = new Client({
 ## Getting started
 
 - Download the project’s zip
-- Create table in PostgreSQL
+- After Creating Database, Check your Connection Strings and Create new table in PostgreSQL
 
 ```
 CREATE TABLE customer
