@@ -36,6 +36,19 @@ NodeJs & PostgreSQL Crud Application
 └── package.json
 ```
 
+## Database Connections - PostgreSQL
+
+Create Database and use the credentials at `connectionStrings`.
+
+```
+const { Client } = require('pg');
+var connectionString = "postgres://postgres:postgres@localhost:5432/database";
+
+const client = new Client({
+    connectionString: connectionString
+});
+```
+
 ## Getting started
 
 - Download the project’s zip
