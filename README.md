@@ -11,7 +11,7 @@ Learn how to create a Simple Crud Application by Connecting PostgreSQL with Node
 
 Within the download you'll find the following directories and files:
 ```
-Connecting NodeJs & PostgreSQL
+NodeJs & PostgreSQL Crud Application
 .
 ├── LICENSE
 ├── README.md
@@ -25,13 +25,13 @@ Connecting NodeJs & PostgreSQL
 │	└── index.js
 ├── views
 │   ├── customer
-│	│	├── list.ejs
-│	│	├── add.ejs
-│   │   └── edit.ejs
-│   ├── layouts
-│	│	├── header.ejs
-│   │   └── footer.ejs
-│   └── inedx.ejs
+│   │   ├── list.ejs
+│   │   ├── add.ejs
+│   │   └── edit.ejs
+│   ├── layouts
+│   │   ├── header.ejs
+│   │   └── footer.ejs
+│   └── inedx.ejs
 ├── app.js
 └── package.json
 ```
