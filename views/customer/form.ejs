@@ -1,31 +1,31 @@
 <%- include ../layouts/header.ejs %>
 <div class="page-data">
-    <form method="post" action="/customers/add">
+    <form method="post" action="<%=action.url%>">
         <table cellpadding="11">
             <tr>
                 <td class="label">Name</td>
-                <td><input type="text" name="name" required /></td>
+                <td><input type="text" name="name" value="<%=model.name%>" required /></td>
             </tr>
             <tr>
                 <td class="label">Address</td>
-                <td><textarea name="address" required cols="30" rows="5"></textarea></td>
+                <td><textarea name="address" required cols="30" rows="5"><%=model.address%></textarea></td>
             </tr>
             <tr>
                 <td class="label">Email</td>
-                <td><input type="text" name="email" required /></td>
+                <td><input type="text" value="<%=model.email%>" name="email" required /></td>
             </tr>
             <tr>
                 <td class="label">Phone</td>
-                <td><input type="text" name="phone" required /></td>
+                <td><input type="text" name="phone" value="<%=model.phone%>" required /></td>
             </tr>
             <tr>
                 <td class="label"></td>
                 <td>
                     <button type="submit">Save</button>
-                    <button type="button" onClick="cancelAdd()">Cancel</button>
+                    <a href="/customers">Cancel</a>
                 </td>
             </tr>
         </table>
-    </form>
+    </form> 
 </div>
 <%- include ../layouts/footer.ejs %>
